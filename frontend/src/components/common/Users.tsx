@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "../ui/card";
 import { cn } from "@/lib/utils";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
@@ -31,14 +30,14 @@ const Users = () => {
         </CardHeader>
       </Card>
       <Card className={cn("w-full bg-transparent text-white border-none")}>
-        <CardHeader>
+        <CardHeader className={cn("p-3")}>
           <div className="flex items-center gap-5">
             <Avatar className={cn("")}>
               <AvatarImage src="https://github.com/shadcn.png" />
               <AvatarFallback>J</AvatarFallback>
             </Avatar>
             <div>
-              <CardTitle className={cn("text-lg")}>Johnny</CardTitle>
+              <CardTitle className={cn("text-lg")}>Mary</CardTitle>
               <CardDescription>Deploy your new project ...</CardDescription>
             </div>
           </div>
